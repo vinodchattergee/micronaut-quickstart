@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: micronautQuickstart
+  server:
+    port: ${SERVER_PORT:8091} # THE VALUE WILL BE READ FROM THE ENV VARIABLE AND IF ITS EMOPTY THEN ASSIGNS 8091
+
+netty:
+  default:
+    allocator:
+      max-order: 3
+hello:
+  world:
+    message: "Hello from application.yml"
+    translation:
+      de: "Hallo Welt"
+      en: "Hello World"
+
+
